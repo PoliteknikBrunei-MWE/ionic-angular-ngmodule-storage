@@ -12,9 +12,11 @@
   </ion-header>
 
   <div id="container">
-    <ion-button (click)="saveUserName('Linda')">Save Username</ion-button>
+    <ion-button (click)="saveUserName({fname: 'Lisa', lname: 'Adams'})"
+      >Save Username</ion-button
+    >
     <ion-button (click)="getUserName()">Get Username</ion-button>
 
-    <p><b>Username:</b> {{ memberName }}</p>
+    <p><b>Username:</b> {{ firstName }}</p>
   </div>
 </ion-content>
